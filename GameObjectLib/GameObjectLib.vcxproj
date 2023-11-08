@@ -19,7 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Tower.cpp" />
+    <ClCompile Include="Towergreen.cpp" />
     <ClCompile Include="Vague.cpp" />
+    <ClCompile Include="workshop.cpp" />
     <ClInclude Include="Healthbar.h" />
     <ClInclude Include="include\Components\ShapeRenderer.h" />
     <ClInclude Include="include\Components\SquareCollider.h" />
@@ -34,9 +37,11 @@
     <ClInclude Include="Mobs.h" />
     <ClInclude Include="Play.h" />
     <ClInclude Include="Player.h" />
-    <ClInclude Include="Towers.h" />
+    <ClInclude Include="Tower.h" />
+    <ClInclude Include="Towergreen.h" />
     <ClInclude Include="Tuto.h" />
     <ClInclude Include="Vague.h" />
+    <ClInclude Include="workshop.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Scene.cpp" />

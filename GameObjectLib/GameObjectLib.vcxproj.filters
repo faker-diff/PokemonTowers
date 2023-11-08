@@ -48,13 +48,19 @@
     <ClInclude Include="Player.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Towers.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Vague.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Tuto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Towergreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tower.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="workshop.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -84,6 +90,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Vague.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Towergreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tower.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="workshop.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

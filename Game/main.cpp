@@ -23,7 +23,7 @@ int main() {
 	}
 
 	music.setLoop(true);
-	music.setVolume(50.0f);
+	music.setVolume(0.0f);
 	music.play();
 
 	sf::Texture backgroundTexture;
