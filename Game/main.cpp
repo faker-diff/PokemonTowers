@@ -18,7 +18,7 @@ int main() {
 
 	sf::Music music;
 
-	if (!music.openFromFile("../Assets/song/music.ogg")) {
+	if (!music.openFromFile("../Assets/song/Conseil4.ogg")) {
 		return -1;
 	}
 
