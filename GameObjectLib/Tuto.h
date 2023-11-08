@@ -10,7 +10,7 @@ void ShowDialogue(sf::RenderWindow& window, const std::string& text, const sf::T
 
     sf::Font font;
     if (!font.loadFromFile("../Assets/font/PokemonSolid.ttf")) {
-        // Assurez-vous que le fichier arial.ttf est dans le répertoire de votre application
+        // Assurez-vous que le fichier arial.ttf est dans le rÃ©pertoire de votre application
         return;
     }
 
@@ -22,7 +22,7 @@ void ShowDialogue(sf::RenderWindow& window, const std::string& text, const sf::T
 
     std::string fullText = text;
     std::string partialText = "";
-    int textSpeed = 15; // Vitesse d'affichage en caractères par seconde
+    int textSpeed = 15; // Vitesse d'affichage en caractÃ¨res par seconde
 
     sf::Clock clock;
 
@@ -49,7 +49,7 @@ void ShowDialogue(sf::RenderWindow& window, const std::string& text, const sf::T
         window.draw(dialogueText);
         window.display();
 
-        sf::sleep(sf::milliseconds(50)); // Vous pouvez ajuster la durée du délai selon vos besoins
+        sf::sleep(sf::milliseconds(50)); // Vous pouvez ajuster la durÃ©e du dÃ©lai selon vos besoins
     }
 
     // Attendre que l'utilisateur appuie sur une touche
@@ -78,7 +78,7 @@ void ShowPartialDialogue(sf::RenderWindow& window, const std::string& text, cons
 
     sf::Font font;
     if (!font.loadFromFile("../Assets/font/arial.ttf")) {
-        // Assurez-vous que le fichier arial.ttf est dans le répertoire de votre application
+        // Assurez-vous que le fichier arial.ttf est dans le rÃ©pertoire de votre application
         return;
     }
 
@@ -90,7 +90,7 @@ void ShowPartialDialogue(sf::RenderWindow& window, const std::string& text, cons
 
     std::string fullText = text;
     std::string partialText = "";
-    int textSpeed = 1; // Vitesse d'affichage en caractères par seconde
+    int textSpeed = 1; // Vitesse d'affichage en caractÃ¨res par seconde
 
     sf::Clock clock;
 
@@ -118,7 +118,7 @@ void ShowPartialDialogue(sf::RenderWindow& window, const std::string& text, cons
         window.draw(ImageImage);  // Affichez l'image ici
         window.display();
 
-        sf::sleep(sf::milliseconds(100)); // Vous pouvez ajuster la durée du délai selon vos besoins
+        sf::sleep(sf::milliseconds(100)); // Vous pouvez ajuster la durÃ©e du dÃ©lai selon vos besoins
     }
     bool keyPressed = false;
     while (!keyPressed) {
@@ -150,7 +150,7 @@ void Tuto() {
 
     sf::Texture ImageTexture;
     if (ImageTexture.loadFromFile("../Assets/img/Tuto.png")) {
-        // Gérez le cas où la texture de l'image ne peut pas être chargée
+        // GÃ©rez le cas oÃ¹ la texture de l'image ne peut pas Ãªtre chargÃ©e
     }
     sf::Sprite ImageImage;
    ImageImage.setTexture(ImageTexture);
@@ -158,16 +158,16 @@ void Tuto() {
 
    sf::Texture DialogTexture;
    if (DialogTexture.loadFromFile("../Assets/img/Intro.png")) {
-       // Gérez le cas où la texture de l'image ne peut pas être chargée
+       // GÃ©rez le cas oÃ¹ la texture de l'image ne peut pas Ãªtre chargÃ©e
    }
 
    sf::Sprite DialogImage;
    DialogImage.setTexture(DialogTexture);
 
-    ShowDialogue(window, "Bonjour jeune dresseur(e) ! Bienvenue dans le monde des Pokémons. \n Mon nom est Chen, je suis le professeur Pokémon. \n Oh je vois que détient déjà un Pokémon Parfait ! <><>", DialogTexture);
-    ShowDialogue(window, "Nous avons un gros probleme à Kanto. \n Depuis quelques jours des Pokémons spectres attaquent sans relache la tour de Kanto. \n Cette tour est un symbole pour tous les habitants. \n Aide moi à stopper tous les pokémons pour empecher la destruction de la tour. <><>", DialogTexture);
+    ShowDialogue(window, "Bonjour jeune dresseur(e) ! Bienvenue dans le monde des PokÃ©mons. \n Mon nom est Chen, je suis le professeur PokÃ©mon. \n Oh je vois que tu dÃ©tiens dÃ©jÃ  un PokÃ©mon Parfait ! <><>", DialogTexture);
+    ShowDialogue(window, "Nous avons un gros probleme Ã  Kanto. \n Depuis quelques jours des PokÃ©mons spectres attaquent sans relache la tour de Kanto. \n Cette tour est un symbole pour tous les habitants. \n Aide moi Ã  stopper tous les pokÃ©mons pour empecher la destruction de la tour. <><>", DialogTexture);
     ShowPartialDialogue(window, "Information", backgroundTexture, ImageTexture);
-    ShowDialogue(window, "Voilà, je t'ai tranmis toutes les informations que je possédais. \n Va et sauve Kanto ! <><>", DialogTexture);
+    ShowDialogue(window, "VoilÃ , je t'ai tranmis toutes les informations que je possÃ©dais. \n Va et sauve Kanto ! <><>", DialogTexture);
     Play(window);
   
     while (window.isOpen()) {
